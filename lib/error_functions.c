@@ -15,7 +15,9 @@ terminate(Boolean useExit3)
     if (s != NULL && *s != '\0')
         abort();
     else if (useExit3)
-            exit(EXIT_FAILURE);
+        exit(EXIT_FAILURE);
+    else
+        _exit(EXIT_FAILURE);
 }
 
 static void
