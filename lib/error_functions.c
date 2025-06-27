@@ -66,7 +66,7 @@ errExit(const char *format, ...)
     va_start(argList, format);
     outputError(TRUE, errno, TRUE, format, argList);
     va_end(argList);
-    
+
     terminate(TRUE);
 }
 
@@ -78,7 +78,7 @@ err_exit(const char *format, ...)
     va_start(argList, format);
     outputError(TRUE, errno, FALSE, format, argList);
     va_end(argList);
-    
+
     terminate(FALSE);
 }
 
@@ -91,7 +91,7 @@ errExitEN(int errnum, const char *format, ...)
     va_start(argList, format);
     outputError(TRUE, errnum, TRUE, format, argList);
     va_end(argList);
-    
+
     terminate(TRUE);
 }
 
@@ -103,7 +103,7 @@ fatal(const char *format, ...)
     va_start(argList, format);
     outputError(FALSE, 0, TRUE, format, argList);
     va_end(argList);
-    
+
     terminate(TRUE);
 }
 
